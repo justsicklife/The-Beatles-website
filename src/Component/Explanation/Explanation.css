@@ -1,0 +1,17 @@
+.Modal_audio_Explanation{
+    height: 65%;
+    padding: 10px;
+    border: 5px solid black;
+}
+.Modal_audio_Explanation_wrap{
+    height: 100%;
+    overflow-y: scroll;
+}
+.Modal_audio_Explanation_wrap::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width:620px) {
+    .Modal_audio_Explanation{
+        display: none;
+    }   
+}

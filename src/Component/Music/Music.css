@@ -1,0 +1,24 @@
+.music{
+    width: 100%;
+    background-color: white;
+    height: 5%;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+}
+.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+@media (max-width:620px) {
+    .music{
+        height: 7%;
+    }
+}

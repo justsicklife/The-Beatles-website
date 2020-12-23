@@ -1,0 +1,50 @@
+.Discography{
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    background: #242424;
+}
+.Discography_wrap{
+    padding: 10px;
+}
+.Discography_text_wrap{
+    text-align: center;
+    padding: 20px 0;
+}
+.Discography_Sort_wrap{
+    display: flex;
+    justify-content: center;
+}
+.A_Z{
+    color: white;
+}
+.Discography_text_wrap > p {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #c7c7c7;
+    text-shadow: -1px 5px 4px rgba(150, 150, 150, 0.88);
+    padding: 20px;
+    /* border: 4px rgb(255, 255, 255) solid; */
+    border-radius: 15px;
+}
+.Discography_Album_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+@media (max-width: 905px){
+    .Discography_Album_wrap {
+        padding-left:  0;
+        padding-right:  0;
+    }
+}
+@media (max-width: 520px){
+    .Discography_text_wrap{
+        font-size: .7em;
+    }
+}

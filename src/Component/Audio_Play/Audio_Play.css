@@ -1,0 +1,7 @@
+.Modal_audio_play_wrap > audio{
+    width: 100%;
+    height: 100%;
+}
+.Modal_audio_play_wrap {
+    height: 10%;
+}

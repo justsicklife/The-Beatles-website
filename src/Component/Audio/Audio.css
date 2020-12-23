@@ -1,0 +1,36 @@
+.Modal_audio_wrap{
+    padding: 20px;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.Modal_audio_play_wrap > audio{
+    width: 100%;
+    height: 100%;
+}
+.Modal_audio_play_wrap {
+    height: 10%;
+}
+.Modal_audio_image_play_wrap{
+    height: 35%;
+    padding: 10px;
+}
+@media (max-width:950px) {
+    .Modal_audio_wrap{
+        width: 50%;
+    }    
+}
+@media (max-width:620px) {
+    .Modal_audio_wrap{
+        height: 30%;
+        float: none;
+        width: 100%;
+        padding: 0 15%;
+        text-align: center;
+    }
+}
+@media (max-width:350px) {
+    .Modal_audio_wrap {
+        padding: 1% 5%;
+    }
+}
