@@ -25,16 +25,12 @@
     color: #c7c7c7;
     text-shadow: -1px 5px 4px rgba(150, 150, 150, 0.88);
     padding: 20px;
-    /* border: 4px rgb(255, 255, 255) solid; */
     border-radius: 15px;
 }
 .Discography_Album_wrap{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-top: 20px;
+    
 }
 
 @media (max-width: 905px){

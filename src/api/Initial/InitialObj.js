@@ -26,6 +26,7 @@ export const initialDiscography = [
         name: "Please Please Me",
         image: "https://upload.wikimedia.org/wikipedia/en/c/c0/PleasePleaseMe_audio_cover.jpg",
         release: new Date(1963, 3, 22),
+        playTime: timeFn(32, 15),
         track: [
             "I Saw Her Standing There",
             "Misery",
@@ -47,6 +48,7 @@ export const initialDiscography = [
         name: "With the Beatles",
         image: "https://upload.wikimedia.org/wikipedia/en/0/0a/Withthebeatlescover.jpg",
         release: new Date(1963, 11, 22),
+        playTime: timeFn(32, 14),
         track: [
             "It Won't Be Long",
             "All I've Got To Do",
@@ -67,6 +69,7 @@ export const initialDiscography = [
         name: "A Hard Day's Night",
         image: "https://upload.wikimedia.org/wikipedia/en/e/e6/HardDayUK.jpg",
         release: new Date(1964, 7, 10),
+        playTime: timeFn(30, 10),
         track: [
             "A Hard Day's Night",
             "I Should Have Known Better",
@@ -87,6 +90,7 @@ export const initialDiscography = [
         name: "Beatles for sale",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Beatlesforsale.jpg/220px-Beatlesforsale.jpg",
         release: new Date(1964, 12, 4),
+        playTime: timeFn(34, 13),
         track: [
             "No Reply",
             "I'm a Loser",
@@ -108,6 +112,7 @@ export const initialDiscography = [
         name: "Help!",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Help%21_%28The_Beatles_album_-_cover_art%29.jpg/220px-Help%21_%28The_Beatles_album_-_cover_art%29.jpg",
         release: new Date(1965, 8, 6),
+        playTime: timeFn(33, 44),
         track: [
             "Help!",
             "The Night Before",
@@ -129,6 +134,7 @@ export const initialDiscography = [
         name: "Rubber Soul",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Rubber_Soul.jpg/220px-Rubber_Soul.jpg",
         release: new Date(1965, 12, 3),
+        playTime: timeFn(34, 55),
         track: [
             "Drive My Car",
             "Norwegian Wood (This Bird Has Flown)",
@@ -150,6 +156,7 @@ export const initialDiscography = [
         name: "Revolver",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Revolver.jpg/220px-Revolver.jpg",
         release: new Date(1966, 8, 5),
+        playTime: timeFn(35, 1),
         track: [
             "Taxman",
             "Eleanor Rigby",
@@ -171,6 +178,7 @@ export const initialDiscography = [
         name: "Sgt. Pepper's Lonely Hearts Club Band",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg/220px-Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg",
         release: new Date(1967, 5, 26),
+        playTime: timeFn(39, 36),
         track: [
             "Sgt. Pepper's Lonely Hearts Club Band",
             "With A Little Help From My Friends",
@@ -191,6 +199,7 @@ export const initialDiscography = [
         name: "Magical Mystery Tour",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/MagicalMysteryTourDoubleEPcover.jpg/220px-MagicalMysteryTourDoubleEPcover.jpg",
         release: new Date(1967, 12, 8),
+        playTime: timeFn(36, 35),
         track: [
             "Magical Mystery Tour",
             "The Fool on the Hill",
@@ -209,6 +218,7 @@ export const initialDiscography = [
         name: "The Beatles",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/TheBeatles68LP.jpg/220px-TheBeatles68LP.jpg",
         release: new Date(1968, 11, 22),
+        playTime: timeFn(93, 43),
         track: [
             "Back in the U.S.S.R",
             "Dear Prudence",
@@ -246,6 +256,7 @@ export const initialDiscography = [
         name: "Yellow Submarine",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/TheBeatles-YellowSubmarinealbumcover.jpg/220px-TheBeatles-YellowSubmarinealbumcover.jpg",
         release: new Date(1969, 1, 13),
+        playTime: timeFn(40, 12),
         track: [
             "Yellow Submarine",
             "Only a Northern Song",
@@ -266,6 +277,7 @@ export const initialDiscography = [
         name: "Abbey Road",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Beatles_-_Abbey_Road.jpg/220px-Beatles_-_Abbey_Road.jpg",
         release: new Date(1969, 9, 26),
+        playTime: timeFn(47, 3),
         track: [
             "Come Together",
             "Something",
@@ -291,6 +303,7 @@ export const initialDiscography = [
         name: "Let It Be ",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/LetItBe.jpg/220px-LetItBe.jpg",
         release: new Date(1970, 5, 8),
+        playTime: timeFn(35, 10),
         track: [
             "Two of Us",
             "Dig a Pony",
@@ -307,3 +320,7 @@ export const initialDiscography = [
         ]
     },
 ]
+
+function timeFn(minutes = 0, second = 0) {
+    return [minutes, second];
+}

@@ -11,9 +11,14 @@
 .Modal_audio_play_wrap {
     height: 10%;
 }
+.Modal_audio_play_wrap > audio{
+    height: 10%;
+    width: 100%;
+    display: block;
+}
 .Modal_audio_image_play_wrap{
     height: 35%;
-    padding: 10px;
+    padding: 30px;
 }
 @media (max-width:950px) {
     .Modal_audio_wrap{
@@ -25,8 +30,11 @@
         height: 30%;
         float: none;
         width: 100%;
-        padding: 0 15%;
+        padding: 30px 30px;
         text-align: center;
+    }
+    .Modal_audio_image_play_wrap{
+        padding: 0;
     }
 }
 @media (max-width:350px) {
