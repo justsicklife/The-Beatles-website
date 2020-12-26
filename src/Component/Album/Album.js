@@ -18,17 +18,20 @@ const Album = ({ album, albumIndex }) => {
                     <img src={album.image} />
                 </span>
                 <div className="Album_back_side_wrap">
-                    <div>
+                    <div className="Album_back_side_name">
                         <span>이름: {album.name}</span>
                     </div>
-                    <div>
+                    <div className="Album_back_side_release">
                         <span>발매일: {`${year}년 ${month}월 ${date}일`}</span>
                     </div>
-                    <div>
+                    <div className="Album_back_side_play_time">
                         <span>
                             재생 시간: {`${album.playTime[0]}분 ${album.playTime[1]}초`}
                         </span>
                     </div>
+                </div>
+                <div className="Album_name">
+                    <span>{album.name}</span>
                 </div>
             </div>
             {/* <div className="Album_name">

@@ -1,8 +1,8 @@
 .Discography{
     width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding: 0 10% 30px;
     background: #242424;
+
 }
 .Discography_wrap{
     padding: 10px;
@@ -10,13 +10,6 @@
 .Discography_text_wrap{
     text-align: center;
     padding: 20px 0;
-}
-.Discography_Sort_wrap{
-    display: flex;
-    justify-content: center;
-}
-.A_Z{
-    color: white;
 }
 .Discography_text_wrap > p {
     display: inline-block;
@@ -30,7 +23,7 @@
 .Discography_Album_wrap{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 @media (max-width: 905px){

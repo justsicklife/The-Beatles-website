@@ -39,7 +39,7 @@
     height: 220px;
     position: relative;
 }
-.Album_release {
+.Album-back_side_release {
     padding: 2px;
     font-size: 1em;
 }
@@ -47,21 +47,25 @@
     padding: 2px;
     font-weight: bold;
     font-size: 1em;
+    color: white;
     overflow:hidden;
     text-overflow:ellipsis;
-    white-space:nowrap
+    white-space:nowrap;
+    text-align: center;
 }
 .Album {
-    /* margin: 20px; */
-    /* flex-grow: 1; */
     box-shadow: 2px 6px 15px -3px #000000;
+    margin: 15px;
 }
 @media (max-width: 1500px){
     .Album_wrap{
         width: 150px;
         height: 150px;
     }
-    .Album{
+    .Album_back_side_wrap{
+        padding: 10px;
+    }
+    .Album_back_side_name,.Album_back_side_play_time,.Album_back_side_release{
         font-size: .8em;
     }
 }

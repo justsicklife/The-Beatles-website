@@ -11,9 +11,6 @@ const Discography = () => {
                 <div className="Discography_text_wrap">
                     <p>Discography</p>
                 </div>
-                <div className="Discography_Sort_wrap">
-                    <div className="A_Z">A-Z</div>
-                </div>
                 <div className="Discography_Album_wrap">
                     {discography.map((album, index) =>
                         <Album album={album} key={index} albumIndex={index} />

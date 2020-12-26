@@ -5,6 +5,7 @@ import Slider from './Component/Slider/Slider.js'
 import Discography from './Component/Discography/Discography.js';
 import Modal from './Component/Modal/Modal.js';
 import * as initialObj from './api/Initial/InitialObj';
+import Profile_List from './Component/Profile_List/Profile_List';
 
 export const AppContext = createContext(null);
 
@@ -48,8 +49,9 @@ function App() {
     <AppContext.Provider value={{ musicIndex, musicClickToggle, albumIndex, modalClickToggle, arrowLeftClick, arrowRightClick, sliderObj, slideIndex, discography }}>
       <div className="App">
         <Logo />
-        <Slider />
+        {/* <Slider /> */}
         <Discography />
+        <Profile_List />
         {isModal ? <Modal /> : null}
       </div>
     </AppContext.Provider>
