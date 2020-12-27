@@ -1,9 +1,16 @@
 import { useRef } from "react";
 import "./Profile_ex.css";
+import { useScrollFadeIn } from "../../api/hooks/useScrollFadeIn.js"
 
-const Profile_ex = ({ profile }) => {
+const Profile_ex = ({ profile, index }) => {
+    const direction = (index % 2 !== 0 ? "left" : "right");
+    const animatedItem = useScrollFadeIn(direction);
+
     return (
-        <div className="Profile_wrap">
+        <div
+            ref={animatedItem.ref}
+            style={animatedItem.style}
+            className="Profile_wrap">
             <div className="Profile_image_wrap">
                 <span className="Profile_image">
                     <img src={profile.image} />

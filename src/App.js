@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import './App.css';
 import Logo from './Component/Logo/Logo.js';
 // import Slider from './Component/Slider/Slider.js'
@@ -6,7 +6,7 @@ import Discography from './Component/Discography/Discography.js';
 import Modal from './Component/Modal/Modal.js';
 import * as initialObj from './api/Initial/InitialObj';
 import Profile_List from './Component/Profile_List/Profile_List';
-
+import { useScrollFadeIn } from './api/hooks/useScrollFadeIn.js';
 
 function App() {
   const [sliderObj, setSliderObj] = useState(initialObj.initialSliderObj)
@@ -15,6 +15,7 @@ function App() {
   const [isModal, setIsModal] = useState(false);
   const [albumIndex, setAlbumIndex] = useState(null);
   const [musicIndex, setMusicIndex] = useState(null);
+
   // const [scrollY, setScrollY] = useState(null);
   // const [windowHeight, setWindowHeight] = useState(null);
 
@@ -22,17 +23,6 @@ function App() {
   //   setScrollY(window.scrollY);
   //   setWindowHeight(window.innerHeight);
   // }
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', scrollEvent);
-  //   window.addEventListener('resize', scrollEvent);
-  //   window.addEventListener('load', scrollEvent);
-  //   return () => {
-  //     window.addEventListener('scroll', scrollEvent);
-  //     window.addEventListener('resize', scrollEvent);
-  //     window.addEventListener('load', scrollEvent);
-  //   }
-  // }, []);
 
   // const arrowRightClick = () => {
   //   let nextIndex = slideIndex + 1;
@@ -72,12 +62,15 @@ function App() {
     <div className="App">
       <Logo />
       {/* <Slider /> */}
+      {/* <div className="block"></div> */}
       <Discography
         discography={discography}
         musicClickToggle={musicClickToggle}
         modalClickToggle={modalClickToggle}
       />
-      <Profile_List sliderObj={sliderObj} />
+      <Profile_List
+        sliderObj={sliderObj}
+      />
       {isModal ? <Modal
         modalClickToggle={modalClickToggle}
         musicClickToggle={musicClickToggle}

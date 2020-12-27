@@ -12,7 +12,11 @@ const Profile_List = ({ sliderObj }) => {
             </div>
             <div className="Profile_List_wrap">
                 {sliderObj.map((profile, index) => {
-                    return <Profile_ex profile={profile} key={index} />
+                    return <Profile_ex
+                        profile={profile}
+                        index={index}
+                        key={index}
+                    />
                 })}
             </div>
         </div>

@@ -1,7 +1,10 @@
 import React from 'react';
 import "./Album.css"
+import { useScrollFadeIn } from "../../api/hooks/useScrollFadeIn.js";
 
 const Album = ({ album, albumIndex, modalClickToggle }) => {
+
+    const animatedItem = useScrollFadeIn();
     const albumDate = album.release;
     const year = albumDate.getFullYear();
     const month = albumDate.getMonth();
@@ -10,7 +13,10 @@ const Album = ({ album, albumIndex, modalClickToggle }) => {
     return (
         <div
             onClick={() => { modalClickToggle(albumIndex) }}
-            className="Album">
+            className="Album"
+            ref={animatedItem.ref}
+            style={animatedItem.style}
+        >
             <div className="Album_wrap">
                 <span className="Album_img">
                     <img src={album.image} />
