@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import './App.css';
 import Logo from './Component/Logo/Logo.js';
 // import Slider from './Component/Slider/Slider.js'
@@ -46,21 +46,27 @@ function App() {
   //   setSlideIndex(nextIndex)
   // }
 
-  const modalClickToggle = (index = null) => {
-    if (index !== null) {
-      setAlbumIndex(index);
-    }
-    setIsModal(!isModal);
-    setMusicIndex(null);
-  }
-
-  const musicClickToggle = (index) => {
-    if (index === musicIndex) {
+  const modalClickToggle = useCallback(
+    (index = null) => {
+      if (index !== null) {
+        setAlbumIndex(index);
+      }
+      setIsModal(!isModal);
       setMusicIndex(null);
-      return
-    }
-    setMusicIndex(index);
-  }
+    },
+    [albumIndex]
+  );
+
+  const musicClickToggle = useCallback(
+    (index) => {
+      if (index === musicIndex) {
+        setMusicIndex(null);
+        return
+      }
+      setMusicIndex(index);
+    },
+    [musicIndex]
+  );
 
   return (
     <div className="App">
