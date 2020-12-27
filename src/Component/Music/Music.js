@@ -1,9 +1,7 @@
 import "./Music.css"
-import { AppContext } from "../../App.js";
-import React, { useContext } from "react";
+import React from "react";
 
-const Music = ({ music, index }) => {
-    const { musicClickToggle, musicIndex } = useContext(AppContext);
+const Music = ({ music, index, musicClickToggle, musicIndex }) => {
     return (
         <li
             className={index === musicIndex ? "active music" : "music"}

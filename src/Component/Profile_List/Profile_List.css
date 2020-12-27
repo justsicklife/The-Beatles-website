@@ -2,3 +2,8 @@
     width: 100%;
     padding: 0 10%;
 }
+@media (max-width:800px) { 
+    .Profile_List{
+        padding: 0 5%;
+    }
+}

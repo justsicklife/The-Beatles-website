@@ -1,9 +1,7 @@
 import "./Audio_Image.css";
-import { AppContext } from "../../App.js";
-import { useContext } from "react";
 
-const Audio_Image = () => {
-    const { discography, albumIndex } = useContext(AppContext);
+
+const Audio_Image = ({ discography, albumIndex }) => {
     return (
         <div className="Modal_audio_image_wrap">
             <span>

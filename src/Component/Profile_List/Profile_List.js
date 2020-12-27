@@ -1,10 +1,8 @@
 import "./Profile_List.css";
 import Profile_ex from "../Profile_ex/Profile_ex.js";
-import { AppContext } from "../../App.js";
-import { useContext } from "react";
+import React from 'react';
 
-const Profile_List = () => {
-    const { sliderObj } = useContext(AppContext);
+const Profile_List = ({ sliderObj }) => {
     return (
         <div className="Profile_List">
             <div className="Profile_text_wrap">
@@ -13,12 +11,12 @@ const Profile_List = () => {
                 </span>
             </div>
             <div className="Profile_List_wrap">
-                {sliderObj.map((profile) => {
-                    return <Profile_ex profile={profile} />
+                {sliderObj.map((profile, index) => {
+                    return <Profile_ex profile={profile} key={index} />
                 })}
             </div>
         </div>
     )
 }
 
-export default Profile_List;
+export default React.memo(Profile_List);

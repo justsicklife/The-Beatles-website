@@ -1,16 +1,23 @@
 import "./Modal.css"
 import Audio from "../Audio/Audio.js"
 import Music_List from "../Music_List/Music_List.js";
-import { AppContext } from "../../App.js"
-import { useContext } from "react";
 
-const Modal = () => {
-    const { modalClickToggle } = useContext(AppContext);
+const Modal = ({ musicClickToggle, modalClickToggle, albumIndex, musicIndex, discography }) => {
     return (
         <div className="Modal">
             <div className="Modal_wrap">
-                <Audio />
-                <Music_List />
+                <Audio
+                    discography={discography}
+                    albumIndex={albumIndex}
+                    musicIndex={musicIndex}
+                />
+                <Music_List
+                    discography={discography}
+                    albumIndex={albumIndex}
+                    musicIndex={musicIndex}
+                    modalClickToggle={modalClickToggle}
+                    musicClickToggle={musicClickToggle}
+                />
                 <div
                     onClick={modalClickToggle}
                     className="Modal_Exit_Button">

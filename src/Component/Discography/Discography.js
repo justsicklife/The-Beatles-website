@@ -1,10 +1,8 @@
 import "./Discography.css";
 import Album from '../Album/Album.js';
-import { AppContext } from "../../App.js";
-import React, { useContext } from "react";
+import React from "react";
 
-const Discography = () => {
-    const { discography } = useContext(AppContext);
+const Discography = ({ discography, modalClickToggle }) => {
     return (
         <div className="Discography">
             <div className="Discography_wrap">
@@ -13,7 +11,11 @@ const Discography = () => {
                 </div>
                 <div className="Discography_Album_wrap">
                     {discography.map((album, index) =>
-                        <Album album={album} key={index} albumIndex={index} />
+                        <Album
+                            album={album}
+                            modalClickToggle={modalClickToggle}
+                            key={index}
+                            albumIndex={index} />
                     )}
                 </div>
             </div>

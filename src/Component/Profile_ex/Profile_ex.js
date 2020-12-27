@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./Profile_ex.css";
 
 const Profile_ex = ({ profile }) => {

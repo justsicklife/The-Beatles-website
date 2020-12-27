@@ -1,33 +1,50 @@
-import { createContext, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Logo from './Component/Logo/Logo.js';
-import Slider from './Component/Slider/Slider.js'
+// import Slider from './Component/Slider/Slider.js'
 import Discography from './Component/Discography/Discography.js';
 import Modal from './Component/Modal/Modal.js';
 import * as initialObj from './api/Initial/InitialObj';
 import Profile_List from './Component/Profile_List/Profile_List';
 
-export const AppContext = createContext(null);
 
 function App() {
   const [sliderObj, setSliderObj] = useState(initialObj.initialSliderObj)
-  const [slideIndex, setSlideIndex] = useState(0);
+  // const [slideIndex, setSlideIndex] = useState(0);
   const [discography, setDiscography] = useState(initialObj.initialDiscography);
   const [isModal, setIsModal] = useState(false);
   const [albumIndex, setAlbumIndex] = useState(null);
   const [musicIndex, setMusicIndex] = useState(null);
+  // const [scrollY, setScrollY] = useState(null);
+  // const [windowHeight, setWindowHeight] = useState(null);
 
-  const arrowRightClick = () => {
-    let nextIndex = slideIndex + 1;
-    nextIndex %= sliderObj.length;
-    setSlideIndex(nextIndex)
-  }
+  // const scrollEvent = () => {
+  //   setScrollY(window.scrollY);
+  //   setWindowHeight(window.innerHeight);
+  // }
 
-  const arrowLeftClick = () => {
-    let nextIndex = slideIndex - 1;
-    nextIndex = nextIndex === -1 ? sliderObj.length - 1 : nextIndex;
-    setSlideIndex(nextIndex)
-  }
+  // useEffect(() => {
+  //   window.addEventListener('scroll', scrollEvent);
+  //   window.addEventListener('resize', scrollEvent);
+  //   window.addEventListener('load', scrollEvent);
+  //   return () => {
+  //     window.addEventListener('scroll', scrollEvent);
+  //     window.addEventListener('resize', scrollEvent);
+  //     window.addEventListener('load', scrollEvent);
+  //   }
+  // }, []);
+
+  // const arrowRightClick = () => {
+  //   let nextIndex = slideIndex + 1;
+  //   nextIndex %= sliderObj.length;
+  //   setSlideIndex(nextIndex)
+  // }
+
+  // const arrowLeftClick = () => {
+  //   let nextIndex = slideIndex - 1;
+  //   nextIndex = nextIndex === -1 ? sliderObj.length - 1 : nextIndex;
+  //   setSlideIndex(nextIndex)
+  // }
 
   const modalClickToggle = (index = null) => {
     if (index !== null) {
@@ -46,15 +63,24 @@ function App() {
   }
 
   return (
-    <AppContext.Provider value={{ musicIndex, musicClickToggle, albumIndex, modalClickToggle, arrowLeftClick, arrowRightClick, sliderObj, slideIndex, discography }}>
-      <div className="App">
-        <Logo />
-        {/* <Slider /> */}
-        <Discography />
-        <Profile_List />
-        {isModal ? <Modal /> : null}
-      </div>
-    </AppContext.Provider>
+    <div className="App">
+      <Logo />
+      {/* <Slider /> */}
+      <Discography
+        discography={discography}
+        musicClickToggle={musicClickToggle}
+        modalClickToggle={modalClickToggle}
+      />
+      <Profile_List sliderObj={sliderObj} />
+      {isModal ? <Modal
+        modalClickToggle={modalClickToggle}
+        musicClickToggle={musicClickToggle}
+        albumIndex={albumIndex}
+        musicIndex={musicIndex}
+        discography={discography}
+      />
+        : null}
+    </div>
   );
 }
 

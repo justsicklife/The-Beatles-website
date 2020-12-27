@@ -1,9 +1,7 @@
+import React from 'react';
 import "./Album.css"
-import { AppContext } from "../../App.js";
-import { useContext } from "react";
 
-const Album = ({ album, albumIndex }) => {
-    const { modalClickToggle } = useContext(AppContext);
+const Album = ({ album, albumIndex, modalClickToggle }) => {
     const albumDate = album.release;
     const year = albumDate.getFullYear();
     const month = albumDate.getMonth();
@@ -50,4 +48,4 @@ const Album = ({ album, albumIndex }) => {
     )
 }
 
-export default Album;
+export default React.memo(Album);
