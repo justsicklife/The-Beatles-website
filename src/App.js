@@ -35,6 +35,9 @@ function App() {
     [musicIndex]
   );
 
+  // 반응형으로 navbar 메뉴 처럼 만들기
+  // 모달창 어떻게하지.
+
   return (
     <div className="App">
       <header>
