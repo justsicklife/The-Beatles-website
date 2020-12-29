@@ -16,7 +16,7 @@ export const initialSliderObj = [
     {
         name: "Jhon Lennon",
         bestSong: "Strawberry field forever",
-        image: "https://lh3.googleusercontent.com/proxy/7D9McZZqu4sZ2tP2_RG_pgipvAVl2T3Ls1s5gadReglN95Nrn_AO0jyfWiazhcom2T82h3rLsHUBp-nZIY1x5B824U7w8SIQzpobGFgcK0d-_CrORCdD1_en6aTX-DETdSVt2Xa1qmMkOzBuHieqo43NGfXyh0SQ2uMxcKecG6w_",
+        image: "https://www.gannett-cdn.com/-mm-/ae811a38ccb7ca7681c5cd9edc7e0bae36516e06/c=261-0-2174-2550/local/-/media/2015/10/08/Phoenix/Phoenix/635799268539755113-ae-lennon09e.jpg",
         birth: new Date(1940, 10 - 1, 9),
         dead: new Date(1980, 12 - 1, 6),
         explain: [

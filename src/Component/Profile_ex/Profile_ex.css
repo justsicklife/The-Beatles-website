@@ -21,6 +21,12 @@
     padding: 10px;
     width: 30%;
 }
+.Profile_wrap:nth-child(odd) {
+    box-shadow: 7px 13px 15px 2px #000000;
+}
+.Profile_wrap:nth-child(even){
+    box-shadow: -11px 13px 15px 2px #000000;
+}
 .Profile_wrap:nth-child(odd) .Profile_image_wrap{
     float: left;
 }
@@ -53,7 +59,8 @@
 }
 .Profile_wrap{
     background-color: rgb(128, 126, 126);
-    margin: 20px 0;
+    margin: 25px 0;
+    border-radius: 5px;
 }
 .Profile_wrap:after {
     content: "";

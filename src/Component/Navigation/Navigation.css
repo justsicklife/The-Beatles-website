@@ -1,0 +1,27 @@
+.Navigation{
+    width: 100%;
+    padding: 0 10%;
+    color: white;
+    background-color: #0000000c;
+}
+.Navigation_wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.Navigation_wrap > li {
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+.bookmark {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}

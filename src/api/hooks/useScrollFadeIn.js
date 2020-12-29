@@ -75,3 +75,4 @@ export const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
     // useEffect(() => {
     //     window.addEventListener('scroll', handleScroll);
     // }, [handleScroll]);
+    

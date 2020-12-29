@@ -4,7 +4,7 @@ import React from 'react';
 
 const Profile_List = ({ sliderObj }) => {
     return (
-        <div className="Profile_List">
+        <article className="Profile_List">
             <div className="Profile_text_wrap">
                 <span>
                     Introduce
@@ -19,7 +19,7 @@ const Profile_List = ({ sliderObj }) => {
                     />
                 })}
             </div>
-        </div>
+        </article>
     )
 }
 
