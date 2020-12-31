@@ -1,16 +1,18 @@
 .music{
     width: 100%;
     background-color: white;
-    height: 5%;
-    font-size: 1.5em;
-    border-radius: 20px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1em;
+    border-radius: 10px;
     margin-top: 10px;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
-    display: table;
-    vertical-align: middle;
     text-align: center;
+}
+.music:last-child {
+    margin-bottom: 5px;
 }
 .active {
     background-color: black;
@@ -20,5 +22,6 @@
 @media (max-width:620px) {
     .music{
         height: 7%;
+        font-size: .8em;
     }
 }

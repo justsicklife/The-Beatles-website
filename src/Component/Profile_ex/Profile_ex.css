@@ -70,9 +70,6 @@
 .Profile_birth_wrap{
     height: 10%;
 }
-.Profile_birth{
-    padding: 10px 0; 
-}
 @media (max-width:800px) {
     .Profile_wrap:nth-child(odd) .Profile_image_wrap{
         float: none;
@@ -85,9 +82,11 @@
     }
     .Profile_name_wrap{
         font-size: .8em;
+        padding: 15px 0;
     }
     .Profile_birth_wrap{
         font-size: .9em;
+        padding: 10px 0;
     }
 
 }

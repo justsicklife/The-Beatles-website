@@ -43,7 +43,7 @@
     padding: 2px;
     font-size: 1em;
 }
-.Album_name {
+.Album_name > figcaption {
     padding: 2px;
     font-weight: bold;
     font-size: 1em;
@@ -52,9 +52,6 @@
     text-overflow:ellipsis;
     white-space:nowrap;
     text-align: center;
-}
-.Album_name > h2{
-    all: unset;
 }
 .Album_back_side_name > h2, .Album_back_side_play_time > h3,.Album_back_side_release > h3{
     font-size: 1em;

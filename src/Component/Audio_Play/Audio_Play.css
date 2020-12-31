@@ -4,4 +4,6 @@
 }
 .Modal_audio_play_wrap {
     height: 10%;
+    width: 100%;
+    display: inline-block;
 }
