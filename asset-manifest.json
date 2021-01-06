@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/The-Beatles-website/static/css/main.9ab4f947.chunk.css",
-    "main.js": "/The-Beatles-website/static/js/main.c2fe7601.chunk.js",
-    "main.js.map": "/The-Beatles-website/static/js/main.c2fe7601.chunk.js.map",
-    "runtime-main.js": "/The-Beatles-website/static/js/runtime-main.a6527abf.js",
-    "runtime-main.js.map": "/The-Beatles-website/static/js/runtime-main.a6527abf.js.map",
-    "static/js/2.740de3bd.chunk.js": "/The-Beatles-website/static/js/2.740de3bd.chunk.js",
-    "static/js/2.740de3bd.chunk.js.map": "/The-Beatles-website/static/js/2.740de3bd.chunk.js.map",
-    "static/js/3.b3cbcdeb.chunk.js": "/The-Beatles-website/static/js/3.b3cbcdeb.chunk.js",
-    "static/js/3.b3cbcdeb.chunk.js.map": "/The-Beatles-website/static/js/3.b3cbcdeb.chunk.js.map",
+    "main.js": "/The-Beatles-website/static/js/main.baa7adcc.chunk.js",
+    "main.js.map": "/The-Beatles-website/static/js/main.baa7adcc.chunk.js.map",
+    "runtime-main.js": "/The-Beatles-website/static/js/runtime-main.76287f10.js",
+    "runtime-main.js.map": "/The-Beatles-website/static/js/runtime-main.76287f10.js.map",
+    "static/js/2.2efd3715.chunk.js": "/The-Beatles-website/static/js/2.2efd3715.chunk.js",
+    "static/js/2.2efd3715.chunk.js.map": "/The-Beatles-website/static/js/2.2efd3715.chunk.js.map",
+    "static/js/3.dabdb363.chunk.js": "/The-Beatles-website/static/js/3.dabdb363.chunk.js",
+    "static/js/3.dabdb363.chunk.js.map": "/The-Beatles-website/static/js/3.dabdb363.chunk.js.map",
     "index.html": "/The-Beatles-website/index.html",
     "static/css/main.9ab4f947.chunk.css.map": "/The-Beatles-website/static/css/main.9ab4f947.chunk.css.map",
-    "static/js/2.740de3bd.chunk.js.LICENSE.txt": "/The-Beatles-website/static/js/2.740de3bd.chunk.js.LICENSE.txt",
+    "static/js/2.2efd3715.chunk.js.LICENSE.txt": "/The-Beatles-website/static/js/2.2efd3715.chunk.js.LICENSE.txt",
     "static/media/logo.2f17021d.png": "/The-Beatles-website/static/media/logo.2f17021d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6527abf.js",
-    "static/js/2.740de3bd.chunk.js",
+    "static/js/runtime-main.76287f10.js",
+    "static/js/2.2efd3715.chunk.js",
     "static/css/main.9ab4f947.chunk.css",
-    "static/js/main.c2fe7601.chunk.js"
+    "static/js/main.baa7adcc.chunk.js"
   ]
 }
