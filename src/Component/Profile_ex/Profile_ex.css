@@ -18,8 +18,8 @@
 .Profile_image_wrap{
     display: block;
     height: 500px;
-    padding: 10px;
     width: 30%;
+    border: 10px solid white;
 }
 .Profile_wrap:nth-child(odd) {
     box-shadow: 7px 13px 15px 2px #000000;

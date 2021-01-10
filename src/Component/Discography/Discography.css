@@ -1,8 +1,6 @@
 .Discography{
     width: 100%;
     padding: 0 10% 30px;
-    background: #242424;
-
 }
 .Discography_wrap{
     padding: 10px;
@@ -15,7 +13,6 @@
     display: inline-block;
     font-size: 3em;
     font-weight: bold;
-    color: #c7c7c7;
     text-shadow: -1px 5px 4px rgba(150, 150, 150, 0.88);
     padding: 20px;
     border-radius: 15px;
