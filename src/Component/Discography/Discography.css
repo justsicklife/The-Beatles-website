@@ -1,15 +1,11 @@
-.Discography{
-    width: 100%;
-    padding: 0 10% 30px;
-}
 .Discography_wrap{
     padding: 10px;
 }
-.Discography_text_wrap{
+.Title{
     text-align: center;
     padding: 20px 0;
 }
-.Discography_text_wrap > h1 {
+.Title > h1 {
     display: inline-block;
     font-size: 3em;
     font-weight: bold;
@@ -24,13 +20,13 @@
 }
 
 @media (max-width: 905px){
-    .Discography_Album_wrap {
+    .Title {
         padding-left:  0;
         padding-right:  0;
     }
 }
 @media (max-width: 520px){
-    .Discography_text_wrap{
-        font-size: .7em;
+    .Title > h1{
+        font-size: 2.3em;
     }
 }

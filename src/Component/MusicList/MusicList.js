@@ -1,7 +1,7 @@
 import Music from '../Music/Music.js';
-import "./Music_List.css";
+import "./MusicList.css";
 
-const Music_List = ({ discography, albumIndex, musicIndex, musicClickToggle }) => {
+const MusicList = ({ discography, albumIndex, musicIndex, musicClickToggle }) => {
     return (
         <div className="Modal_Music_List">
             <ul className="Modal_Music_List_wrap">
@@ -19,4 +19,4 @@ const Music_List = ({ discography, albumIndex, musicIndex, musicClickToggle }) =
     )
 }
 
-export default Music_List;
+export default MusicList;

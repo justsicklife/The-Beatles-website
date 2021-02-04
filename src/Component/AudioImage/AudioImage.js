@@ -1,7 +1,7 @@
-import "./Audio_Image.css";
+import "./AudioImage.css";
 
 
-const Audio_Image = ({ discography, albumIndex }) => {
+const AudioImage = ({ discography, albumIndex }) => {
     return (
         <div className="Modal_audio_image_wrap">
             <span>
@@ -11,4 +11,4 @@ const Audio_Image = ({ discography, albumIndex }) => {
     )
 }
 
-export default Audio_Image;
+export default AudioImage;

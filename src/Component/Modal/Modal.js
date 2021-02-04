@@ -1,6 +1,6 @@
 import "./Modal.css"
 import Audio from "../Audio/Audio.js"
-import Music_List from "../Music_List/Music_List.js";
+import MusicList from "../MusicList/MusicList.js";
 
 const Modal = ({ musicClickToggle, modalClickToggle, albumIndex, musicIndex, discography }) => {
     return (
@@ -11,7 +11,7 @@ const Modal = ({ musicClickToggle, modalClickToggle, albumIndex, musicIndex, dis
                     albumIndex={albumIndex}
                     musicIndex={musicIndex}
                 />
-                <Music_List
+                <MusicList
                     discography={discography}
                     albumIndex={albumIndex}
                     musicIndex={musicIndex}

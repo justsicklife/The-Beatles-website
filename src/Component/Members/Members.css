@@ -1,10 +1,9 @@
-.Profile_List{
-    width: 100%;
-    padding: 0 10%;
+.Members{
     overflow-x: hidden;
 }
+
 @media (max-width:800px) { 
-    .Profile_List{
+    .Members{
         padding: 0 5%;
     }
 }

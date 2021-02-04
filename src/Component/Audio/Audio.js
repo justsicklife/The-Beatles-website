@@ -1,5 +1,5 @@
 import "./Audio.css"
-import Audio_Image from '../Audio_Image/Audio_Image.js';
+import Audio_Image from '../AudioImage/AudioImage.js';
 import Audio_Play from '../Audio_Play/Audio_Play.js';
 import Explanation from '../Explanation/Explanation.js';
 

@@ -3,12 +3,16 @@ import './App.css';
 import Discography from './Component/Discography/Discography.js';
 import Modal from './Component/Modal/Modal.js';
 import * as initialObj from './api/Initial/InitialObj';
-import Profile_List from './Component/Profile_List/Profile_List';
+import Members from './Component/Members/Members.js';
 import Navigation from "./Component/Navigation/Navigation.js";
+import Summarry from "./Component/Summary/Summary.js";
+import Songs from "./Component/Songs/Songs.js";
 
 function App() {
   const [sliderObj, setSliderObj] = useState(initialObj.initialSliderObj)
   const [discography, setDiscography] = useState(initialObj.initialDiscography);
+  const [summaryObj, setSummaryObj] = useState(initialObj.initialSummary);
+  const [songsObj, setSongsObj] = useState(initialObj.initialSongs);
   const [isModal, setIsModal] = useState(false);
   const [albumIndex, setAlbumIndex] = useState(null);
   const [musicIndex, setMusicIndex] = useState(null);
@@ -46,16 +50,20 @@ function App() {
         </nav>
       </header>
       <main>
-        <a id="Discography_page">
+        <Summarry summaryObj={summaryObj} />
+        <a id="songs_bookmark">
+          <Songs songs={songsObj} />
+        </a>
+        <a id="discography_bookmark">
           <Discography
             discography={discography}
             musicClickToggle={musicClickToggle}
             modalClickToggle={modalClickToggle}
           />
         </a>
-        <a id="Profile_page"
+        <a id="members_bookmark"
         >
-          <Profile_List
+          <Members
             sliderObj={sliderObj}
           />
         </a>
@@ -68,6 +76,9 @@ function App() {
         discography={discography}
       />
         : null}
+      <footer className="footer">
+
+      </footer>
     </div>
   );
 }

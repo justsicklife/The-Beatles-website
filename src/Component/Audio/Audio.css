@@ -18,7 +18,7 @@
 }
 .Modal_audio_image_play_wrap{
     height: 35%;
-    padding: 30px;
+    padding: 25px;
 }
 @media (max-width:950px) {
     .Modal_audio_wrap{
