@@ -7,6 +7,7 @@ import Members from './Component/Members/Members.js';
 import Navigation from "./Component/Navigation/Navigation.js";
 import Summarry from "./Component/Summary/Summary.js";
 import Songs from "./Component/Songs/Songs.js";
+import Link from "./Component/Link/Link.js";
 
 function App() {
   const [sliderObj, setSliderObj] = useState(initialObj.initialSliderObj)
@@ -65,6 +66,11 @@ function App() {
         >
           <Members
             sliderObj={sliderObj}
+          />
+        </a>
+        <a id="link_bookmark"
+        >
+          <Link
           />
         </a>
       </main>
