@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 
 const useMenuToggle = (direction = "up") => {
-    const menu_button = useRef();
     const menu = useRef();
 
     const handleDirection = (name) => {
@@ -40,17 +39,13 @@ const useMenuToggle = (direction = "up") => {
         [direction]
     )
 
-    useEffect(() => {
-        const { current } = menu_button;
-        current.addEventListener('click', menuSlideIn);
-        return () => {
-            current.addRemoveEventListener('click', menuSlideIn);
-        }
-    }, [direction, menuSlideIn])
+    const buttonToggle = () => {
+        menuSlideIn();
+    }
 
     return {
         button: {
-            ref: menu_button
+            onClick: buttonToggle
         },
         menu: {
             ref: menu,

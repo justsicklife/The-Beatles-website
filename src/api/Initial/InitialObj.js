@@ -1,3 +1,25 @@
+export const initialLinkObj = [
+    {
+        name: "facebook",
+        icon: "fab fa-twitter",
+        href: "https://facebook.com/thebeatles/",
+    },
+    {
+        name: "twitter",
+        icon: "fab fa-facebook-f",
+        href: "https://twitter.com/thebeatles",
+    },
+    {
+        name: "youtube",
+        icon: "fab fa-youtube",
+        href: "https://youtube.com/user/thebeatles",
+    },
+    {
+        name: "youtube",
+        icon: "fab fa-instagram",
+        href: "https://www.instagram.com/thebeatles/",
+    },
+]
 export const initialSongs = [
     {
         src: "https://www.youtube.com/embed/2RicaUqd9Hg",

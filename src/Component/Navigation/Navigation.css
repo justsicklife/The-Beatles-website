@@ -43,15 +43,21 @@ header {
     font-size: 2em;
     color: white;
 }
-.Menu{
+.Menu_list_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 996;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.Menu_list{
     width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
     z-index: 997;
-    position: absolute;
 }
-.Menu > li {
+.Menu_list > li {
     background-color: rgb(59, 54, 54);
     padding: 10px;
     
@@ -69,7 +75,7 @@ header {
     .menu_toggle {
         display: none;
     }
-    .Menu {
+    .Menu_list_wrap {
         display: none;
     }
 }
