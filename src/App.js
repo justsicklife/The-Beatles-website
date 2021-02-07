@@ -82,7 +82,7 @@ function App() {
       />
         : null}
       <footer className="footer">
-
+        <div className="github_link"><a target="_blank" href="https://github.com/justsicklife/The-Beatles-website"><i className="fab fa-github"></i></a></div>
       </footer>
     </div>
   );

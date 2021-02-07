@@ -1,16 +1,20 @@
 import "./Explanation.css";
-import Title from "../Title/Title.js";
-import Description from "../Description/Description.js"
 
 const Explanation = ({ discography, albumIndex, musicIndex }) => {
     return (
         <div className="Modal_audio_Explanation_wrap">
-            <Description />
-            <Title
-                discography={discography}
-                albumIndex={albumIndex}
-                musicIndex={musicIndex}
-            />
+            {musicIndex !== null &&
+                <>
+                    <div className="Modal_audio_Explanation_title_wrap">
+                        <div className="Modal_audio_Explanation_title">
+                            <span>{discography[albumIndex].track[musicIndex]}</span>
+                        </div>
+                    </div>
+                    <div className="Modal_audio_Explanation_lyrics">
+                        <span>가사</span>
+                    </div>
+                </>
+            }
         </div>
     )
 }

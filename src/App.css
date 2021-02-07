@@ -22,6 +22,31 @@ body {
     padding: 20px;
     border-radius: 15px;
 }
+.footer {
+    padding: 20px;
+    background: rgba(24, 24, 24, 0.644);
+}
+.github_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github_link > a{
+    color: white;
+    background: rgb(255, 115, 0);
+    display: inline-block;
+    border-radius: 15px;
+    transition: 1s all;
+}
+.github_link > a:hover{
+    background: rgba(221, 109, 17, 0.815);
+}
+.github_link i{
+    padding: 15px;
+    font-size: 2em;
+}
 @media (max-width: 905px){
     .Title {
         padding-left:  0;

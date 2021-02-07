@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Songs.css";
+import Song from "../Song/Song.js";
 
 const Songs = ({ songs }) => {
     const songListRef = useRef();
@@ -12,22 +13,6 @@ const Songs = ({ songs }) => {
         if (songIndex.current === songs.length - 1 && direction === 1) return;
         songIndex.current += direction;
         songListRef.current.style.transform = `translateX(${songIndex.current * -songBoxWidth.current}px)`;
-    }
-
-    const SongList = () => {
-        return (
-            <>
-                {songs.map(song => {
-                    return (
-                        <div key={song.src} className="song_box">
-                            <iframe src={song.src}></iframe>
-                            <div className="song_name_wrap">
-                                <h2>{song.name}</h2>
-                            </div>
-                        </div>)
-                })}
-            </>
-        )
     }
 
     const windowResizeEvenet = () => {
@@ -58,7 +43,7 @@ const Songs = ({ songs }) => {
             <div className="songs_wrap">
                 <div ref={songsSliderRef} className="songs_slider">
                     <div ref={songListRef} className="song_list">
-                        <SongList />
+                        <Song songs={songs} />
                     </div>
                 </div>
                 <div className="songs_slider_button">

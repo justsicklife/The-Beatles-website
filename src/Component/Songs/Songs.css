@@ -32,15 +32,6 @@
     position: relative;
     top: -45px;
 }
-.song_name_wrap{
-    width: auto;
-    margin: 0 50px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-}
-.songs_slider_button{
-}
 .songs_slider_button > button{
     border: none;
     outline: none;
@@ -49,27 +40,8 @@
     border-radius: 30px;
     color: rgb(124, 124, 124)
 }
-.songs_slider_button > button:hover{
-    
-}
-.song_list{
-    transition: transform .5s;
-    height: 100%;
-    min-height: 450px;
-    max-height: 450px;
-}
 .songs_slider_button i{
     font-size: 3em;
-}
-.song_box {
-    width: 100%;
-    /* max-width: 500px; */
-    display: inline-flex;
-    flex-direction: column;
-}
-iframe{
-    width: 100%;
-    min-height: 400px;
 }
 @media (max-width: 570px) {
     .song_name_wrap > h2 {

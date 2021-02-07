@@ -29,13 +29,13 @@ const Member = ({ member, index }) => {
                     </h2>
                 </div>
                 <div className="Member_roles">
-                    {member.roles.map(role => {
-                        return <span className="Member_role">{role}</span>
+                    {member.roles.map((role, index) => {
+                        return <span key={`${role}${index}`} className="Member_role">{role}</span>
                     })}
                 </div>
                 <div className="Member_explain_text_wrap">
-                    {member.explain.map((explain) => {
-                        return <p className="Member_explain_text">{explain}</p>
+                    {member.explain.map((explain, index) => {
+                        return <p key={`${explain}${index}`} className="Member_explain_text">{explain}</p>
                     })}
                 </div>
             </div>

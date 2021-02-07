@@ -10,6 +10,20 @@
 .Modal_audio_Explanation_wrap::-webkit-scrollbar {
     display: none;
 }
+.Modal_audio_Explanation_title_wrap {
+    text-align: center;
+}
+.Modal_audio_Explanation_title > span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.Modal_audio_Explanation_title{
+    padding: 10px;
+}
+.Modal_audio_Explanation_lyrics{
+    margin-top: 15px;
+    text-align: center;
+}
 @media (max-width:620px) {
     .Modal_audio_Explanation{
         display: none;

@@ -15,7 +15,7 @@ const Members = ({ sliderObj }) => {
                     return <Member
                         member={member}
                         index={index}
-                        key={index}
+                        key={`${member}${index}`}
                     />
                 })}
             </div>
