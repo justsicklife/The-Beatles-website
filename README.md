@@ -24,10 +24,6 @@
 ### 대표 컴포넌트 설명
 #### Songs
 This is a normal paragraph:
-
-    This is a code block.
-    
-end code block.
 노래를 슬라이더 안에 넣어서 효과적으로 만듬
   ---
 #### Discography
