@@ -1,6 +1,6 @@
 import "./Song.css";
 
-const Song = ({songs}) => {
+const Song = ({ songs }) => {
     return (
         <>
             {songs.map(song => {
