@@ -43,7 +43,13 @@
     비틀즈와 관련된 링크를 나열함
 ![link](https://user-images.githubusercontent.com/59939039/107169754-fd2c9100-6a01-11eb-8754-90c33b0413e0.PNG)
 #### Navigation
-    웹사이트에 navbar 
+    웹사이트에 navbar 이다.
+---
+    큰화면 버전 navbar
+![navbar](https://user-images.githubusercontent.com/59939039/107170099-d4f16200-6a02-11eb-89ad-9e544ed50805.PNG)
+---
+    모바일 버전 navbar
+![navbarmobile](https://user-images.githubusercontent.com/59939039/107170102-d6228f00-6a02-11eb-8704-16a21b1f872f.PNG)
 #### Logo 
     웹사이트 navbar에 비틀즈 로고이다 
 #### Summary
@@ -52,7 +58,12 @@
 #### Modal
     Alubm 정보를 나타내는 컴포넌트
     Album을 클릭하면 Modal 폴더에 있는 Modal.js 에 있는 Modal Box 가 화면에 보여지게 된다.
+---
+    큰화면 버전
 ![modal](https://user-images.githubusercontent.com/59939039/107169986-8e9c0300-6a02-11eb-950d-1f54184552b3.PNG)
+---
+    모바일 버전 
+![modalmobile](https://user-images.githubusercontent.com/59939039/107170266-3c0f1680-6a03-11eb-953f-247001222cc6.PNG)
 #### Audio
     클릭한 앨범 이미지와 선택한 노래를 들을수 있는 버튼 물론 노래는 안나온다. 
     노래넣으면 폴매카트니 가 나같은 애는 그냥 가만이 놔두갰지만 혹시 몰라서 안넣었다.
