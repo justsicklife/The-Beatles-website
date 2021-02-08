@@ -26,27 +26,33 @@
 ### 대표 컴포넌트 설명
 #### Songs
     노래를 담을 슬라이더 역할 
+![song](https://user-images.githubusercontent.com/59939039/107169748-fb62cd80-6a01-11eb-9c3b-2e3e329ef0fb.PNG)
 #### Song 
     슬라이더에 담을 노래 역할
 #### Discography
     비틀즈의 디스코 그래피에 있는 앨범들을 나열하여 효과적으로 보여줌
+![discograpy](https://user-images.githubusercontent.com/59939039/107169750-fc93fa80-6a01-11eb-942f-646c4467e752.PNG)
 #### Members
     비틀즈의 맴버들에 설명,역할,나이 정보들을 묶은거 
     Members.js 안에서 Member.js 를 import 하여 map 함수를 이용해
     여러개의 Member 컴포넌트를 리턴 해준다
+![member](https://user-images.githubusercontent.com/59939039/107169753-fd2c9100-6a01-11eb-9c02-0a9c43c8425a.PNG)
 #### Member
     비틀즈의 맴버에 설명,역할,나이 정보를 나타내는 컴포넌트
 #### LinkList
     비틀즈와 관련된 링크를 나열함
+![link](https://user-images.githubusercontent.com/59939039/107169754-fd2c9100-6a01-11eb-8754-90c33b0413e0.PNG)
 #### Navigation
     웹사이트에 navbar 
 #### Logo 
     웹사이트 navbar에 비틀즈 로고이다 
 #### Summary
     웹사이트에서 처음보게 될 이미지
+![summary](https://user-images.githubusercontent.com/59939039/107169758-fdc52780-6a01-11eb-8bca-a10d0bee505b.PNG)
 #### Modal
     Alubm 정보를 나타내는 컴포넌트
     Album을 클릭하면 Modal 폴더에 있는 Modal.js 에 있는 Modal Box 가 화면에 보여지게 된다.
+![modal](https://user-images.githubusercontent.com/59939039/107169986-8e9c0300-6a02-11eb-950d-1f54184552b3.PNG)
 #### Audio
     클릭한 앨범 이미지와 선택한 노래를 들을수 있는 버튼 물론 노래는 안나온다. 
     노래넣으면 폴매카트니 가 나같은 애는 그냥 가만이 놔두갰지만 혹시 몰라서 안넣었다.
