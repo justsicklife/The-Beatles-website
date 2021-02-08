@@ -64,14 +64,14 @@
 #### img 폴더
     navbar에 들어갈 사진 로고가 들어있다 그게 logo.png
 #### hooks 폴더
-### useMenuToggle.js
+##### useMenuToggle.js
     navbar에 menu 버튼을 동작하게 할수있는 함수 
     onClick 과 작동해야할 menuRef 를 반환함
-### useScrollFadeIn.js
+##### useScrollFadeIn.js
     스크롤을 하면 자연스럽게 컴포넌트 들이 미끄러지듯 나타나게 하는 함수
     매개변수에는 나타날 방향, 애니메이션 시간 , 애니메이션 딜레이 가 있다.
     반환값은 적용할 ref를 반환한다.
-### useNavLogoSticky
+##### useNavLogoSticky
     스크롤이 지정한 높이에 있다면 navbar에 로고가 커지게 하는 함수 
     매게변수는 최소 크기 숫자, 최대 크기 숫자,실행 전 스타일 ,실행 후 스타일이다.
     반환값은 적용할 ref 를 반환한다.
