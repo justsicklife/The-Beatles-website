@@ -1,18 +1,6 @@
 .Discography_wrap{
     padding: 10px;
 }
-.Title{
-    text-align: center;
-    padding: 20px 0;
-}
-.Title > h1 {
-    display: inline-block;
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: -1px 5px 4px rgba(150, 150, 150, 0.88);
-    padding: 20px;
-    border-radius: 15px;
-}
 .Discography_Album_wrap{
     display: flex;
     flex-wrap: wrap;
