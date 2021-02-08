@@ -1,6 +1,7 @@
 import "./Navigation.css";
 import Logo from "../Logo/Logo.js";
 import useMenuToggle from "../../api/hooks/useMenuToggle.js";
+import React from "react";
 
 const Navigation = () => {
     const { menu, button } = useMenuToggle("right");
@@ -31,4 +32,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation;
+export default React.memo(Navigation);

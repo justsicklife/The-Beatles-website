@@ -1,3 +1,4 @@
+import React from "react";
 import "./Summary.css";
 const Summary = ({ summaryObj }) => {
     return (
@@ -12,4 +13,4 @@ const Summary = ({ summaryObj }) => {
     )
 }
 
-export default Summary;
+export default React.memo(Summary);

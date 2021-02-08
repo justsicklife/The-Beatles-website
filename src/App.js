@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import './App.css';
 import Discography from './Component/Discography/Discography.js';
 import Modal from './Component/Modal/Modal.js';
@@ -40,9 +40,6 @@ function App() {
     },
     [musicIndex]
   );
-
-  // 반응형으로 navbar 메뉴 처럼 만들기
-  // 모달창 어떻게하지.
 
   return (
     <div className="App">

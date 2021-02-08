@@ -1,6 +1,7 @@
 import "./Modal.css"
 import Audio from "../Audio/Audio.js"
 import MusicList from "../MusicList/MusicList.js";
+import React from "react";
 
 const Modal = ({ musicClickToggle, modalClickToggle, albumIndex, musicIndex, discography }) => {
     return (
@@ -28,4 +29,4 @@ const Modal = ({ musicClickToggle, modalClickToggle, albumIndex, musicIndex, dis
     )
 }
 
-export default Modal;
+export default React.memo(Modal);
