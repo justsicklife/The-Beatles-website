@@ -36,7 +36,12 @@
     비틀즈의 맴버들에 설명,역할,나이 정보들을 묶은거 
     Members.js 안에서 Member.js 를 import 하여 map 함수를 이용해
     여러개의 Member 컴포넌트를 리턴 해준다
+    큰화면 버전
 ![member](https://user-images.githubusercontent.com/59939039/107169753-fd2c9100-6a01-11eb-9c02-0a9c43c8425a.PNG)
+---
+   모바일 버전
+![membermobile](https://user-images.githubusercontent.com/59939039/107170452-b3dd4100-6a03-11eb-9d97-7be8597a0a25.PNG)
+---
 #### Member
     비틀즈의 맴버에 설명,역할,나이 정보를 나타내는 컴포넌트
 #### LinkList
