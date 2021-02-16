@@ -78,26 +78,11 @@ export const initialSummary = {
     image: "https://wallpaperaccess.com/full/695805.jpg",
     description: "바틀즈의 앨범 Abbey Road",
 }
-export const initialSliderObj = [
-    {
-        name: "Ringo Starr",
-        bestSong: "Octopus man",
-        image: "https://i.pinimg.com/originals/be/39/14/be3914b9effdc598f430f6aa5e097a42.jpg",
-        birth: new Date(1940, 7 - 1, 7),
-        dead: null,
-        explain: [
-            `리처드 스타키 경(Sir Richard Starkey, MBE, 1940년 7월 7일 ~ )은 링고 스타(Ringo Starr)로 알려진 영국의 드러머, 가수, 작곡가, 배우다. 비틀즈의 드러머로 활동해 세계적인 유명세를 획득했다. 대개 한 음반의 한 곡에서 리드 보컬로 참여했고, 그중에는 〈With a Little Help from My Friends〉, 〈Yellow Submarine〉, 〈Good Night〉, 그들이 커버한 〈Act Naturally〉 등이 있다. 비틀즈 노래 〈Don't Pass Me By〉, 〈Octopus's Garden〉를 썼고, 〈What Goes On〉과 〈Flying〉 등에서는 공동 작곡가로 기록되었다.
-            유년기 목숨을 위협받는 병을 앓은 적이 있었고, 장기간의 입원으로 학교 재적을 포기해야 했다. 1955년 노동자 일을 시작해 리버풀의 장비 제조사에서 견습직을 지냈고 영국 국유 철도에서 잠시 근무했다. 그 직후 영국 스키풀 열풍에 관심을 가졌고 장르에 대한 강렬한 존경을 심속에 기르기 시작한다. 1957년 자신의 첫 밴드인 에디 클레이튼 스키플 밴드를 공동결성했다.`,
-            `1958년 미국 로큰롤에 스키풀 열풍이 무릎을 꿇게 되기 전까지 몇몇 일류 지역 공연장에서 출연계약을 맺었다.
-            1960년 비틀즈가 결성됐을 때 스타는 다른 리버풀 밴드인 로리 스톰 앤 더 허리케인스의 일원이었다. 그 밴드와 영국 및 함부르크에서 준수한 성적을 거둔 이후 허리케인스를 탈퇴해 피트 베스트 자리를 대체하여 1962년 8월 비틀즈에 합류했다. 스타는 비틀즈 영화들과 여러 다른 작품에서 주역을 연기했다. 1970년 비틀즈의 해산 이후 미국 4위 〈It Don't Come Easy〉, 1위 〈Photograph〉, 〈You're Sixteen〉 등 성공한 싱글을 몇 장 발표했다. 1972년 영국에서 자신의 가장 성공한 싱글 〈Back Off Boogaloo〉 (영국 2위)를 발표했다. 1973년 음반 《Ringo》로 상업적 및 비평적 성공을 이룩했다. 이 음반은 영미 모두에서 10위 내로 진입했다. 수많은 다큐멘터리 및 텔레비전 쇼에서도 출연했다. 아동용 텔레비전 프로그램 《토마스와 친구들》 첫 시즌 2까지 나레이터를 맡았고, PBS의 아동용 텔레비전 시리즈 《샤이닝 타임 스테이션》의 첫 시즌 가운데 〈Mr Conductor〉에서 연기했다. 1989년부터 12번의 변형이 존재한 링고 스타 & 히즈 올스타 밴드와 순회공연을 하고 있다.`,
-            , `스타의 음악에 대한 창조적 공헌은 다른 드러머로부터 찬사를 받았으며, 필 콜린스는 그를 "위대한 음악가"로 높이 불렀고,[4] 스티브 스미스는 "링고 이전에, 드럼 스타는 솔로 능력 및 기교로 판단받았다. 링고의 유명세는 새로운 패러다임을 개척했다 ... 우리는 드러머를 작곡 측면에서 동등한 참여자로 여기게 되었다 ... 그의 파트는 노래에서 너무나 도드라져 보이며 당신은 링고의 드럼 파트만 듣는다 해도 노래가 무엇인지 알 수 있을 것이다."라고 그를 평가했다.[5] 1998년 《모던 드러머》 명예의 전당에 헌액되었다.[6] 2011년 《롤링 스톤》 독자에 의해 역대 5번째로 위대한 드러머로 선정되었다. 1988년 비틀즈의 일원으로 로큰롤 명예의 전당에 헌액되었고, 2015년 솔로 경력을 통해 헌액돼 두 차례 이상 헌액된 21명의 공연자 중 한 명이 되었다.`
-        ],
-        roles: ["드럼", "보컬"]
-    },
+export const initialMemberArray = [
     {
         name: "Jhon Lennon",
         bestSong: "Strawberry field forever",
-        image: "https://www.gannett-cdn.com/-mm-/ae811a38ccb7ca7681c5cd9edc7e0bae36516e06/c=261-0-2174-2550/local/-/media/2015/10/08/Phoenix/Phoenix/635799268539755113-ae-lennon09e.jpg",
+        image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F11%2F20%2Fethan-russell-photography-book-1-2000.jpg",
         birth: new Date(1940, 10 - 1, 9),
         dead: new Date(1980, 12 - 1, 6),
         explain: [
@@ -112,7 +97,7 @@ export const initialSliderObj = [
     {
         name: "Paul McCartney",
         bestSong: "Rocky Raccoon",
-        image: "https://upload.wikimedia.org/wikipedia/commons/0/00/Paul_McCartney_Headshot_%28cropped%29.jpg",
+        image: "https://wp.en.aleteia.org/wp-content/uploads/sites/2/2017/12/web3-paul-mccartney-let-it-be-fair-use.jpg?quality=100&strip=all",
         birth: new Date(1942, 6 - 1, 18),
         dead: null,
         explain: [
@@ -123,9 +108,24 @@ export const initialSliderObj = [
         roles: ["보컬", "베이스"]
     },
     {
+        name: "Ringo Starr",
+        bestSong: "Octopus man",
+        image: "https://i.pinimg.com/originals/dd/37/25/dd37250f43fa3f99e26fc1bd42fbd37b.jpg",
+        birth: new Date(1940, 7 - 1, 7),
+        dead: null,
+        explain: [
+            `리처드 스타키 경(Sir Richard Starkey, MBE, 1940년 7월 7일 ~ )은 링고 스타(Ringo Starr)로 알려진 영국의 드러머, 가수, 작곡가, 배우다. 비틀즈의 드러머로 활동해 세계적인 유명세를 획득했다. 대개 한 음반의 한 곡에서 리드 보컬로 참여했고, 그중에는 〈With a Little Help from My Friends〉, 〈Yellow Submarine〉, 〈Good Night〉, 그들이 커버한 〈Act Naturally〉 등이 있다. 비틀즈 노래 〈Don't Pass Me By〉, 〈Octopus's Garden〉를 썼고, 〈What Goes On〉과 〈Flying〉 등에서는 공동 작곡가로 기록되었다.
+            유년기 목숨을 위협받는 병을 앓은 적이 있었고, 장기간의 입원으로 학교 재적을 포기해야 했다. 1955년 노동자 일을 시작해 리버풀의 장비 제조사에서 견습직을 지냈고 영국 국유 철도에서 잠시 근무했다. 그 직후 영국 스키풀 열풍에 관심을 가졌고 장르에 대한 강렬한 존경을 심속에 기르기 시작한다. 1957년 자신의 첫 밴드인 에디 클레이튼 스키플 밴드를 공동결성했다.`,
+            `1958년 미국 로큰롤에 스키풀 열풍이 무릎을 꿇게 되기 전까지 몇몇 일류 지역 공연장에서 출연계약을 맺었다.
+            1960년 비틀즈가 결성됐을 때 스타는 다른 리버풀 밴드인 로리 스톰 앤 더 허리케인스의 일원이었다. 그 밴드와 영국 및 함부르크에서 준수한 성적을 거둔 이후 허리케인스를 탈퇴해 피트 베스트 자리를 대체하여 1962년 8월 비틀즈에 합류했다. 스타는 비틀즈 영화들과 여러 다른 작품에서 주역을 연기했다. 1970년 비틀즈의 해산 이후 미국 4위 〈It Don't Come Easy〉, 1위 〈Photograph〉, 〈You're Sixteen〉 등 성공한 싱글을 몇 장 발표했다. 1972년 영국에서 자신의 가장 성공한 싱글 〈Back Off Boogaloo〉 (영국 2위)를 발표했다. 1973년 음반 《Ringo》로 상업적 및 비평적 성공을 이룩했다. 이 음반은 영미 모두에서 10위 내로 진입했다. 수많은 다큐멘터리 및 텔레비전 쇼에서도 출연했다. 아동용 텔레비전 프로그램 《토마스와 친구들》 첫 시즌 2까지 나레이터를 맡았고, PBS의 아동용 텔레비전 시리즈 《샤이닝 타임 스테이션》의 첫 시즌 가운데 〈Mr Conductor〉에서 연기했다. 1989년부터 12번의 변형이 존재한 링고 스타 & 히즈 올스타 밴드와 순회공연을 하고 있다.`,
+            , `스타의 음악에 대한 창조적 공헌은 다른 드러머로부터 찬사를 받았으며, 필 콜린스는 그를 "위대한 음악가"로 높이 불렀고,[4] 스티브 스미스는 "링고 이전에, 드럼 스타는 솔로 능력 및 기교로 판단받았다. 링고의 유명세는 새로운 패러다임을 개척했다 ... 우리는 드러머를 작곡 측면에서 동등한 참여자로 여기게 되었다 ... 그의 파트는 노래에서 너무나 도드라져 보이며 당신은 링고의 드럼 파트만 듣는다 해도 노래가 무엇인지 알 수 있을 것이다."라고 그를 평가했다.[5] 1998년 《모던 드러머》 명예의 전당에 헌액되었다.[6] 2011년 《롤링 스톤》 독자에 의해 역대 5번째로 위대한 드러머로 선정되었다. 1988년 비틀즈의 일원으로 로큰롤 명예의 전당에 헌액되었고, 2015년 솔로 경력을 통해 헌액돼 두 차례 이상 헌액된 21명의 공연자 중 한 명이 되었다.`
+        ],
+        roles: ["드럼", "보컬"]
+    },
+    {
         name: "George Harrison",
         bestSong: "Here comes the sun",
-        image: "https://www.inquirer.com/resizer/yJGa2qh0kdwyp9KFjytGoiItR5o=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/FKM7IY6INBBOPLDQCSMXZZBZYE.jpg",
+        image: "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/a9Gi/image/tDPslt0hTZY4vCnO3BvieGWiv_k.jpg",
         birth: new Date(1943, 2 - 1, 25),
         dead: new Date(2001, 11 - 1, 29),
         explain: [

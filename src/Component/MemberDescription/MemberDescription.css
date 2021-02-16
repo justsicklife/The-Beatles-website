@@ -1,0 +1,20 @@
+.member_description{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.member_description_name{
+    text-align: center;
+    margin-bottom: 7px;
+    flex: 1;
+}
+.member_description_roles{
+    text-align: center;
+    margin-bottom: 7px;
+    flex: 1;
+}
+.member_description_introduce_wrap{
+    flex: none;
+    height: 450px;
+    overflow-y: scroll;
+}

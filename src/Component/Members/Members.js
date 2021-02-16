@@ -1,8 +1,9 @@
 import "./Members.css";
-import Member from "../Member/Member.js";
+import MemberBox from "../MemberBox/MemberBox.js";
+import MemberDescription from "../MemberDescription/MemberDescription.js";
 import React from 'react';
 
-const Members = ({ sliderObj }) => {
+const Members = ({ memberArray, memberIndex, onClickMember }) => {
     return (
         <article className="Members container">
             <div className="Title">
@@ -11,15 +12,17 @@ const Members = ({ sliderObj }) => {
                 </h1>
             </div>
             <div className="Members_wrap">
-                {sliderObj.map((member, index) => {
-                    return <Member
-                        member={member}
-                        index={index}
-                        key={`${member}${index}`}
-                    />
-                })}
+                <MemberBox
+                    memberIndex={memberIndex}
+                    memberArray={memberArray}
+                    onClickMember={onClickMember}
+                />
+                <MemberDescription
+                    memberIndex={memberIndex}
+                    memberArray={memberArray}
+                />
             </div>
-        </article>
+        </article >
     )
 }
 

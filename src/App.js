@@ -10,7 +10,7 @@ import Songs from "./Component/Songs/Songs.js";
 import LinkList from "./Component/LinkList/LinkList.js";
 
 function App() {
-  const [sliderObj, setSliderObj] = useState(initialObj.initialSliderObj)
+  const [memberArray, setMemberArray] = useState(initialObj.initialMemberArray)
   const [discography, setDiscography] = useState(initialObj.initialDiscography);
   const [summaryObj, setSummaryObj] = useState(initialObj.initialSummary);
   const [songsObj, setSongsObj] = useState(initialObj.initialSongs);
@@ -18,6 +18,12 @@ function App() {
   const [isModal, setIsModal] = useState(false);
   const [albumIndex, setAlbumIndex] = useState(null);
   const [musicIndex, setMusicIndex] = useState(null);
+  const [currentMemberIndex, setCurrentMemberIndex] = useState(0);
+
+  const onClickMember = (index) => {
+    if (currentMemberIndex === index) return
+    setCurrentMemberIndex(index);
+  }
 
   const modalClickToggle = useCallback(
     (index = null) => {
@@ -63,7 +69,9 @@ function App() {
         <div id="members_bookmark"
         >
           <Members
-            sliderObj={sliderObj}
+            memberArray={memberArray}
+            memberIndex={currentMemberIndex}
+            onClickMember={onClickMember}
           />
         </div>
         <div id="link_bookmark">

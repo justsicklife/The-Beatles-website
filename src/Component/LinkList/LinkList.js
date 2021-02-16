@@ -1,5 +1,6 @@
 import "./LinkList.css";
 import Link from "../Link/Link.js";
+import React from "react";
 
 const LinkList = ({ linkList }) => {
     return (
@@ -22,4 +23,4 @@ const LinkList = ({ linkList }) => {
     )
 }
 
-export default LinkList;
+export default React.memo(LinkList);
