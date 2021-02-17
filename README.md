@@ -49,7 +49,7 @@
 ![memberBox](https://user-images.githubusercontent.com/59939039/108226956-b74d9680-7180-11eb-9c15-8bd966b1d67b.PNG)
 #### MemberDescription 
     MemberBox에서 클릭한 맴버에 맞는 정보가 나옴
-![memberBox](https://user-images.githubusercontent.com/59939039/108226956-b74d9680-7180-11eb-9c15-8bd966b1d67b.PNG)
+![memberDescription](https://user-images.githubusercontent.com/59939039/108226950-b6b50000-7180-11eb-9571-8b19113db8fd.PNG)
 #### LinkList
     비틀즈와 관련된 링크를 나열함
 ![link](https://user-images.githubusercontent.com/59939039/107169754-fd2c9100-6a01-11eb-8754-90c33b0413e0.PNG)
