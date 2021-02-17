@@ -68,6 +68,17 @@
 .Link_box > span > i {
     font-size: 10em;
 }
+@media (max-width: 300px) {
+    .Link_box_list{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(4,150px);
+        gap: 10px;
+    }
+    .Link_box > span > i {
+        font-size: 7em;
+    }
+}
 @media (min-width: 300px) {
     .Link_box_list{
         display: grid;
