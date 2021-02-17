@@ -55,7 +55,9 @@
 .Album_back_side_name > h2, .Album_back_side_play_time > h3,.Album_back_side_release > h3{
     font-size: 1em;
 }
-
+.Album_back_side_name,.Album_back_side_release{
+    margin-bottom: 5px;
+}
 .Album {
     box-shadow: 2px 6px 15px -3px #000000;
     margin: 15px;

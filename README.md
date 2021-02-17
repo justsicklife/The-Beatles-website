@@ -4,29 +4,31 @@
 
         리액로 제작
 
-## 컴포넌트들에 폴더 구조 
-* Songs 
-  * Song
-* Discography
-  * Album
-* Members
-  * Member
-* LinkList
-  * Link
-* Navigation
-  * Logo
-* Modal
-  * Audio
-    * Explanation
-  * MusicList
-    * Music
-* Summary
+## 컴포넌트들에 파일 참조 구조 
+* App.js
+    * Songs.js 
+        * Song.js
+    * Discography.js
+        * Album.js
+    * Members.js
+        * MemberBox.js
+        * MemberDescription.js
+    * LinkList.js
+        * Link.js
+    * Navigation.js
+        * Logo.js
+    * Modal.js
+        * Audio.js
+            * Explanation.js
+        * MusicList.js
+            * Music.js
+    * Summary.js
 ---
 
 ### 대표 컴포넌트 설명
 #### Songs
     노래를 담을 슬라이더 역할 
-![song](https://user-images.githubusercontent.com/59939039/107169748-fb62cd80-6a01-11eb-9c3b-2e3e329ef0fb.PNG)
+![songs](https://user-images.githubusercontent.com/59939039/108228299-12cc5400-7182-11eb-8f81-d0eb8b19d49f.PNG)
 #### Song 
     슬라이더에 담을 노래 역할
 #### Discography
@@ -34,16 +36,20 @@
 ![discograpy](https://user-images.githubusercontent.com/59939039/107169750-fc93fa80-6a01-11eb-942f-646c4467e752.PNG)
 #### Members
     비틀즈의 맴버들에 설명,역할,나이 정보들을 묶은거 
-    Members.js 안에서 Member.js 를 import 하여 map 함수를 이용해
     여러개의 Member 컴포넌트를 리턴 해준다
 ##### 큰화면 버전
-![member](https://user-images.githubusercontent.com/59939039/107169753-fd2c9100-6a01-11eb-9c02-0a9c43c8425a.PNG)
+![memebers](https://user-images.githubusercontent.com/59939039/108226944-b583d300-7180-11eb-82ce-aa7725c4c083.PNG)
 ---
 ##### 모바일 버전
-![membermobile](https://user-images.githubusercontent.com/59939039/107170452-b3dd4100-6a03-11eb-9d97-7be8597a0a25.PNG)
+![memberMobile](https://user-images.githubusercontent.com/59939039/108226947-b61c6980-7180-11eb-86b0-fde94c2354b6.PNG)
 ---
-#### Member
-    비틀즈의 맴버에 설명,역할,나이 정보를 나타내는 컴포넌트
+#### MemberBox 
+    비틀즈의 맴버들에 사진이 담겨있고 이 사진에 있는 맴버를 클릭하면 
+    MemberDescription 에서 클릭한 맴버에 대한 정보가 나타난다.
+![memberBox](https://user-images.githubusercontent.com/59939039/108226956-b74d9680-7180-11eb-9c15-8bd966b1d67b.PNG)
+#### MemberDescription 
+    MemberBox에서 클릭한 맴버에 맞는 정보가 나옴
+![memberBox](https://user-images.githubusercontent.com/59939039/108226956-b74d9680-7180-11eb-9c15-8bd966b1d67b.PNG)
 #### LinkList
     비틀즈와 관련된 링크를 나열함
 ![link](https://user-images.githubusercontent.com/59939039/107169754-fd2c9100-6a01-11eb-8754-90c33b0413e0.PNG)

@@ -6,6 +6,7 @@ const MemberBox = ({ memberArray, onClickMember, memberIndex }) => {
             {memberArray.map((member, index) => {
                 return (
                     <div
+                        key={`${member}${index}`}
                         onClick={() => onClickMember(index)}
                         className="member_box_wrap">
                         <div className="member_box_image">

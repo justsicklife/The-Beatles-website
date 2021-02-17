@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import './App.css';
 import Discography from './Component/Discography/Discography.js';
 import Modal from './Component/Modal/Modal.js';
@@ -19,6 +19,44 @@ function App() {
   const [albumIndex, setAlbumIndex] = useState(null);
   const [musicIndex, setMusicIndex] = useState(null);
   const [currentMemberIndex, setCurrentMemberIndex] = useState(0);
+  const [songIndex, setSongIndex] = useState(0);
+
+  const songListRef = useRef();
+  const songBoxWidth = useRef();
+  const songBoxRef = useRef();
+  const songIndexRef = useRef(0);
+
+  const songSlideButton = (direction) => {
+    if (songIndex === 0 && direction === -1) return;
+    if (songIndex === songsObj.length - 1 && direction === 1) return;
+    const nextIndex = songIndex + direction;
+    setSongIndex(nextIndex);
+    songIndexRef.current = nextIndex;
+  }
+
+  const windowResizeEvenet = () => {
+    if (songBoxWidth.current == songBoxRef.current.clientWidth) return
+    songBoxWidth.current = songBoxRef.current.clientWidth;
+    songListRef.current.style.transform = `translateX(${songIndexRef.current * -songBoxWidth.current}px)`;
+    for (let i = 0; i < songListRef.current.children.length; i++) {
+      songListRef.current.children[i].style.maxWidth = `${songBoxWidth.current}px`;
+    }
+    songListRef.current.style.width = `${songsObj.length * songBoxWidth.current}px`
+  }
+
+  useEffect(() => {
+    songListRef.current.style.transform = `translateX(${songIndex * -songBoxWidth.current}px)`;
+  }, [songIndex]);
+
+  useEffect(() => {
+    windowResizeEvenet();
+    window.addEventListener('resize', windowResizeEvenet);
+    window.addEventListener('reset', windowResizeEvenet);
+    return () => {
+      window.removeEventListener('resize', windowResizeEvenet);
+      window.removeEventListener('reset', windowResizeEvenet);
+    }
+  }, []);
 
   const onClickMember = (index) => {
     if (currentMemberIndex === index) return
@@ -57,7 +95,14 @@ function App() {
       <main>
         <Summarry summaryObj={summaryObj} />
         <div id="songs_bookmark">
-          <Songs songs={songsObj} />
+          <Songs
+            songs={songsObj}
+            songIndex={songIndex}
+            discography={discography}
+            songListRef={songListRef}
+            songBoxRef={songBoxRef}
+            songSlideButton={songSlideButton}
+          />
         </div>
         <div id="discography_bookmark">
           <Discography

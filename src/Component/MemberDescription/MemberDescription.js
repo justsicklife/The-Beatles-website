@@ -9,15 +9,15 @@ const MemberDescription = ({ memberArray, memberIndex }) => {
                 </div>
                 <div className="member_description_roles">
                     {
-                        memberArray[memberIndex].roles.map(role => {
-                            return <span className="member_description_role">{role}</span>
+                        memberArray[memberIndex].roles.map((role, index) => {
+                            return <span key={`${index}${role}`} className="member_description_role">{role}</span>
                         })
                     }
                 </div>
                 <div className="member_description_introduce_wrap">
                     {
-                        memberArray[memberIndex].explain.map(a => {
-                            return <p className="member_description_introduce">{a}</p>
+                        memberArray[memberIndex].explain.map((text, index) => {
+                            return <p key={`${index}${text}`} className="member_description_introduce">{text}</p>
                         })
                     }
                 </div>
