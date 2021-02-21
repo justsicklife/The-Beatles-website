@@ -1,8 +1,6 @@
 .song_list{
     transition: transform .5s;
     height: 100%;
-    min-height: 450px;
-    max-height: 450px;
 }
 .song_name_wrap{
     width: auto;
@@ -53,4 +51,14 @@
 }
 .song_box_link_wrap:hover > a {
     opacity: 1;
+}
+@media (max-width: 600px) {
+    .song_box_link_wrap{
+        height: 300px;
+    }
+}
+@media (max-width: 350px) {
+    .song_box_link_wrap{
+        height: 250px;
+    }
 }
