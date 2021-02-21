@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/The-Beatles-website/static/css/main.e9ad2cda.chunk.css",
+    "main.css": "/The-Beatles-website/static/css/main.aa460a2f.chunk.css",
     "main.js": "/The-Beatles-website/static/js/main.49f881ed.chunk.js",
     "main.js.map": "/The-Beatles-website/static/js/main.49f881ed.chunk.js.map",
     "runtime-main.js": "/The-Beatles-website/static/js/runtime-main.23a4e3aa.js",
@@ -10,14 +10,14 @@
     "static/js/3.4b21516d.chunk.js": "/The-Beatles-website/static/js/3.4b21516d.chunk.js",
     "static/js/3.4b21516d.chunk.js.map": "/The-Beatles-website/static/js/3.4b21516d.chunk.js.map",
     "index.html": "/The-Beatles-website/index.html",
-    "static/css/main.e9ad2cda.chunk.css.map": "/The-Beatles-website/static/css/main.e9ad2cda.chunk.css.map",
+    "static/css/main.aa460a2f.chunk.css.map": "/The-Beatles-website/static/css/main.aa460a2f.chunk.css.map",
     "static/js/2.e43db97a.chunk.js.LICENSE.txt": "/The-Beatles-website/static/js/2.e43db97a.chunk.js.LICENSE.txt",
     "static/media/logo.2f17021d.png": "/The-Beatles-website/static/media/logo.2f17021d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.23a4e3aa.js",
     "static/js/2.e43db97a.chunk.js",
-    "static/css/main.e9ad2cda.chunk.css",
+    "static/css/main.aa460a2f.chunk.css",
     "static/js/main.49f881ed.chunk.js"
   ]
 }
